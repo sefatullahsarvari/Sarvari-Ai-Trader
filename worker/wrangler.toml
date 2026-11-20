@@ -1,6 +1,9 @@
+
 name = "sa-ai-trader-worker"
 main = "src/index.ts"
 compatibility_date = "2025-05-01"
+
+workers_dev = true
 
 [[d1_databases]]
 binding = "DB"
@@ -9,4 +12,4 @@ database_id = "d06e83e9-29d5-4128-8e46-1e07b5631c7a"
 migrations_dir = "../database/migrations"
 
 [vars]
-ALLOWED_ORIGIN = ""
+ALLOWED_ORIGIN = "https://sarvari-ai-trader.sefatullahsarvari144.workers.dev"
