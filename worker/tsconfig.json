@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "lib": ["ES2022", "WebWorker"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "../src/types/**/*.ts",
+    "../src/lib/validation.ts",
+    "../src/lib/indicators.ts",
+    "../src/lib/signalEngine.ts"
+  ]
+}

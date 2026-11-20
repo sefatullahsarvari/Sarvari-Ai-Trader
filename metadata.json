@@ -1,0 +1,6 @@
+{
+  "name": "SA AI TRADER",
+  "description": "XAUUSD/GOLD trading analysis terminal connected to XM MetaTrader 5 via a secure read-only Cloudflare Worker bridge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
