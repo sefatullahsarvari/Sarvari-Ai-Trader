@@ -4,11 +4,11 @@
 //|   NEVER places, modifies, or closes trades. No account password. |
 //+------------------------------------------------------------------+
 #property copyright "SA AI TRADER"
-#property version   "1.00"
+#property version   "3.00"
 #property strict
 
 input string InpApiEndpoint = "https://sa-ai-trader-worker.sefatullahsarvari144.workers.dev/api/bridge/mt5"; // Bridge API Endpoint
-input string InpBridgeToken    = "Sefat@2027.SaSefat@2027.Sa";       // XM_BRIDGE_TOKEN (must match Worker secret)
+input string InpBridgeToken    = "";         // Enter the Cloudflare XM_BRIDGE_TOKEN locally in MT5; never commit it
 input string InpSymbol         = "GOLD";   // XM Broker Symbol (e.g. GOLD or GOLDmicro)
 input int    InpIntervalSec    = 4;        // Push interval in seconds (3 to 5)
 input int    InpCandlesCount   = 220;      // Initial backfill bars per timeframe (min 205 for EMA 200)
