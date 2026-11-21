@@ -1,10 +1,12 @@
+const DEFAULT_API_BASE_URL = 'https://sa-ai-trader-worker.sefatullahsarvari144.workers.dev';
+
 export function getApiBaseUrl(): string {
   const metaEnv = (import.meta as ImportMeta & { env?: { VITE_API_BASE_URL?: string } }).env;
-  const raw = (metaEnv?.VITE_API_BASE_URL ?? '').trim();
+  const raw = (metaEnv?.VITE_API_BASE_URL ?? DEFAULT_API_BASE_URL).trim();
   if (!raw) {
-    return '';
+    return DEFAULT_API_BASE_URL;
   }
-  return raw.replace(/\/+$/, '');
+  return raw.replace(/\\/+$/, '');
 }
 
 export function buildApiUrl(path: string): string {
