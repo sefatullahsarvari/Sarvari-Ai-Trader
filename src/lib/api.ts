@@ -6,7 +6,7 @@ export function getApiBaseUrl(): string {
   if (!raw) {
     return DEFAULT_API_BASE_URL;
   }
-  return raw.replace(/\\/+$/, '');
+  return raw.replace(/\/+$/, '');
 }
 
 export function buildApiUrl(path: string): string {
